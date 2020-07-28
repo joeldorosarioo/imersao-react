@@ -32,12 +32,8 @@ export default function BannerMain({
         </ContentAreaContainer.Item>
 
         <ContentAreaContainer.Item>
-          <VideoIframeResponsive
-            youtubeID={youTubeID}
-          />
-          <WatchButton>
-            Assistir
-          </WatchButton>
+          <VideoIframeResponsive youtubeID={youTubeID} />
+          <WatchButton>Assistir</WatchButton>
         </ContentAreaContainer.Item>
       </ContentAreaContainer>
     </BannerMainContainer>

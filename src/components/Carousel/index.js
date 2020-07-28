@@ -10,6 +10,7 @@ function VideoCardGroup({
   const categoryColor = category.cor;
   const categoryExtraLink = category.link_extra;
   const videos = category.videos;
+  
   return (
     <VideoCardGroupContainer>
       {categoryTitle && (
@@ -32,11 +33,7 @@ function VideoCardGroup({
 
           return (
             <li key={video.titulo}>
-              <VideoCard
-                videoTitle={video.titulo}
-                videoURL={video.url}
-                categoryColor={categoryColor}
-              />
+              <VideoCard videoTitle={video.titulo} videoURL={video.url} categoryColor={categoryColor} />
             </li>
           );
         })}
